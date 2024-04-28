@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+nav{
+    background-color: rgb(33, 33, 173);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+.input-text{
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 3%;
+    display: inline-block;
+    width: 43%;
+}
+.input-text h1{
+    margin-bottom: 30px;
+    
+}
+.input-text textarea{
+    background:transparent;
+    border: solid black 2px ;
+    padding: 5px;
+    width: 65%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+
+.input-text input{
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border: none;
+    margin: 5px;
+    font-size: 15px;
+}
+.result{
+    margin-left: 50%;
+    margin-right: 0;
+    margin-top:-18%;
+}
+#Index{
+    margin-left: 10%;
+    margin-top: 10%;
+    background-color:darkblue;
+    color: white;
+    height: 200px;
+    width: 400px;
+    padding: 50px;
+    text-align: center;
+    border: black solid 10px;
+}
+#videoId{
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    padding: 10px;
+}
+#YT{
+    margin-left: 57%;
+    margin-top: -21%;
+    background-color: darkblue;
+    color: white;
+    height: 200px;
+    width: 400px;
+    padding: 50px;
+    text-align: center;
+    border: black solid 10px;
+}
+#YT h2{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#Index h2{
+    margin-bottom: 45px;
+    margin-top: 40px;
+}
+
+a{
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+
+
+button{
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border: none;
+    margin: 5px;
+    font-size: 15px;
+}
+/* Add custom styles for the table heading row */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: black; /* Set background color */
+    color: white; /* Set font color */
+    font-weight: bold; /* Make the font bold */
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #dddddd;
+}
