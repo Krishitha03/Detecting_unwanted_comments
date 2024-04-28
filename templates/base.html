@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detecting Unwanted Comments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Define the animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        /* Apply animation to <a> tags */
+        a {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>DETECTING UNWANTED COMMENTS</h1>
+    </nav>
+    <div id="Index">
+        <center>
+            <h2>To Check Toxicity On Input Text</h2>
+            <a href="{{ url_for('index') }}">Click Here</a>
+        </center>
+    </div>
+    <div id="YT">
+        <center>
+            <h2>To List The Toxic Comments in YouTube video</h2>
+            <a href="{{ url_for('YT') }}">Click Here</a>
+        </center>
+    </div>
+</body>
+</html>
+
