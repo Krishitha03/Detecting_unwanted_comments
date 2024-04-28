@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toxic Comments Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+    <h1>DETECTING UNWANTED COMMENTS</h1>
+    </nav>
+
+    <div class="input-text">
+        <h1>Check Toxicity</h1>
+        <h3>Copy paste the comments or enter the sentence:</h3>
+        <form action="/predict1" method="post">
+            <textarea name="text" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="result">
+    <h1>Predicted Result:</h1>
+    {% for table in tables %}
+        {{ table|safe }}
+    {% endfor %}
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Toxic Comments Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>DETECTING UNWANTED COMMENTS</h1>
+    </nav>
+    <div class="input-text">
+    <form id="videoForm">
+        <h2>Enter YouTube Video ID:</h2>
+        <input type="text" id="videoId" name="videoId">
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <div id="toxicComments">
+        <div id="toxicComments">
+            <table class="styled-table">
+                <!-- Table content will be dynamically generated -->
+            </table>
+        </div>
+        
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#videoForm').submit(function (event) {
+                event.preventDefault();
+                var videoId = $('#videoId').val();
+                $.ajax({
+                    url: '/toxic_comments',
+                    method: 'POST',
+                    data: {videoId: videoId},
+                    success: function (response) {
+                        $('#toxicComments').html(response);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error:', error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
