@@ -1,5 +1,5 @@
 flask
-pandas as pd
+pandas
 google-api-python-client
-numpy as np
-tensorflow==2.15.0 as tf
+numpy
+tensorflow==2.15.0
